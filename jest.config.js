@@ -4,3 +4,9 @@ module.exports = {
     ...jestConfig,
     modulePathIgnorePatterns: ['<rootDir>/.localdevserver']
 };
+
+moduleNameMapper: {
+    '^lightning/button$': '<rootDir>/force-app/test/jest-mocks/lightning/button',
+    '^thunder/hammerButton$': '<rootDir>/force-app/test/jest-mocks/thunder/hammerButton',
+    '^c/displayPanel$': '<rootDir>/force-app/test/jest-mocks/c/displayPanel',
+};
